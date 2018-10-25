@@ -18,7 +18,7 @@ export default class Dot extends Component {
   static defaultProps = {
     isDragging: false,
     offset: 0,
-    size: 16,
+    size: 24,
     style: {},
   };
 
@@ -26,8 +26,8 @@ export default class Dot extends Component {
     super(props);
 
     this.clickColor = colors.primary;
-    this.idleColor = new Color(colors.primary).lighten(0.2).string();
-    this.hoverColor = new Color(colors.primary).lighten(0.3).string();
+    this.idleColor = new Color('#f44336').lighten(0.2).string();
+    this.hoverColor = new Color('#f44336').lighten(0.3).string();
   }
 
   state = { isHover: false };
