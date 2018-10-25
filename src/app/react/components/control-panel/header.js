@@ -10,7 +10,6 @@ import Logo from 'app/react/components/logo';
 export default class Header extends Component {
   static propTypes = {
     isExpanded: PropTypes.bool.isRequired,
-    isCompact: PropTypes.bool.isRequired,
     onExpandClick: PropTypes.func.isRequired,
   };
 
@@ -20,13 +19,13 @@ export default class Header extends Component {
   };
 
   render() {
-    const { isExpanded, isCompact } = this.props;
+    const { isExpanded } = this.props;
 
     return (
       <div style={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}>
         <Logo
           style={{
-            height: (isCompact && !isExpanded) ? '20px' : '40px',
+            height: '20px',
             transition: 'all 0.15s ease',
             width: 'auto',
           }}

@@ -40,7 +40,7 @@ class ControlPanelContainer extends Component {
 
     const baseStyle = {
       backgroundColor: 'white',
-      maxHeight: '110px',
+      maxHeight: '75px',
       opacity: 0.5,
       overflowX: 'hidden',
       overflowY: 'hidden',
@@ -79,7 +79,7 @@ class ControlPanelContainer extends Component {
       >
         <Spacing
           size={(isCompact && !isExpanded) ? 'tiny' : 'large'}
-          style={{ transition: 'all 0.15s ease' }}
+          style={{ transition: 'all 0.15s ease', padding: '24px 0' }}
           top
           bottom
           padding
